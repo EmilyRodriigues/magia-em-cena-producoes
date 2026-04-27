@@ -1,0 +1,458 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 5%;
+    z-index: 2;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: var(--color-neutral-1);
+}
+
+#cta .title span {
+    color: var(--color-primary-6);
+}
+
+#cta .description {
+    font-size: 1.1rem;
+    color: var(--color-neutral-1);
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: var(--color-primary-1);
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+/* ------------------------------------------- */
+/* HERO STATS (NÚMEROS ALINHADOS) */
+/* ------------------------------------------- */
+.hero-stats {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.stat-number {
+    color: var(--color-primary-6);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.stat-text {
+    color: var(--color-neutral-1);
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+/* ------------------------------------------- */
+/* BANNER (IMAGEM COM EFEITO BLOB ANIMADO) */
+/* ------------------------------------------- */
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    max-width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border: 6px solid var(--color-neutral-1);
+    box-shadow: 0 0 35px rgba(108, 180, 240, 0.5);
+    animation: morph 8s ease-in-out infinite, float 6s ease-in-out infinite;
+    transition: all 0.4s ease;
+}
+
+#banner img:hover {
+    box-shadow: 0 0 50px rgba(108, 180, 240, 0.9);
+    cursor: pointer;
+}
+
+@keyframes morph {
+    0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+    100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ------------------------------------------- */
+/* FUNDO E SERVIÇOS */
+/* ------------------------------------------- */
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #89c5f7;
+    clip-path: circle(50% at bottom right);
+}
+/* ------------------------------------------- */
+/* NOVOS CARDS DE SERVIÇOS */
+/* ------------------------------------------- */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+#servicos {
+    text-align: center; 
+    /* Aumentei um pouco o padding-top e bottom para o gradiente e a sombra respirarem bem */
+    padding: 80px 20px; 
+    
+    /* Efeito Reverso: começa na cor clara do Quem Somos e desce escurecendo para o azul original */
+    background: linear-gradient(to bottom, var(--color-primary-3) 0%, var(--color-primary-1) 100%);
+    
+    /* Mantém a sombra interna para dar a mesma sensação de "degrau" */
+    box-shadow: inset 0px 20px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+#servicos h1 {
+    font-size: 2.2em; /* Aumentei de leve o tamanho (de 2.0 para 2.2) para dar mais presença */
+    color: var(--color-neutral-1); /* Muda a cor para o branco padrão do seu site */
+    margin-bottom: 10px; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Cria uma sombra escura sutil que "descola" o texto do fundo */
+    font-weight: 700; /* Deixa a fonte um pouco mais encorpada */
+}
+
+#servicos h2 {
+    font-size: 1.2em; 
+    color: #e2e2e2; 
+    margin-bottom: 30px; 
+    font-weight: 400;
+}
+
+.service-card {
+    background-color: var(--color-neutral-1);
+    border-radius: 20px;
+    width: 340px;
+    padding: 35px 25px;
+    text-align: left;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    border-top: 5px solid transparent;
+}
+
+/* Animação Mágica ao passar o mouse! */
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 20px 40px rgba(108, 180, 240, 0.4);
+    border-top: 5px solid var(--color-primary-5);
+}
+
+.service-card.highlight {
+    border-top: 5px solid var(--color-primary-6);
+    transform: scale(1.05); /* Deixa o show temático levemente maior */
+}
+
+.service-card.highlight:hover {
+    transform: scale(1.05) translateY(-15px);
+}
+
+.service-card h3 {
+    font-size: 1.6rem;
+    color: var(--color-primary-1);
+    margin-bottom: 10px;
+}
+
+.service-desc {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.service-features i {
+    color: var(--color-primary-6); /* Check azul claro */
+}
+
+.btn-open-modal {
+    width: 100%;
+}
+
+/* ------------------------------------------- */
+/* ESTILOS DO MODAL (JANELINHA) */
+/* ------------------------------------------- */
+.modal-overlay {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro transparente */
+    z-index: 9999; /* Fica acima de tudo no site */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: var(--color-neutral-1);
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.show .modal-content {
+    transform: scale(1); /* Animação de "pulo" ao abrir */
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: var(--color-neutral-1);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--color-primary-3), var(--color-primary-1)); /* Gradiente azul do site */
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+}
+
+.modal-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.modal-header p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+#orcamentoForm {
+    padding: 25px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .input-group {
+    flex: 1;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-primary-1);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: var(--color-primary-5);
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-email, .btn-whatsapp {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Botão Email Laranja (como na sua imagem de referência) */
+.btn-email {
+    background-color: #f78c44;
+    color: white;
+}
+
+.btn-email:hover {
+    background-color: #e07630;
+}
+
+/* Botão WhatsApp contornado verde (como na sua imagem) */
+.btn-whatsapp {
+    background-color: transparent;
+    border: 2px solid #25D366;
+    color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .service-card.highlight {
+        transform: scale(1);
+    }
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .modal-buttons {
+        flex-direction: column;
+    }
+}
+/* ------------------------------------------- */
+/* RESPONSIVIDADE (MOBILE E TABLETS) */
+/* ------------------------------------------- */
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: column; /* Coloca a imagem embaixo do texto no mobile */
+        align-items: center;
+        gap: 50px; /* Dá um espaço entre os botões e a imagem */
+    }
+
+    /* Esconde apenas o círculo azul de fundo, pois no mobile ele atrapalha a leitura */
+    #home .circle {
+        display: none; 
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Ajuste responsivo dos números */
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap; /* Permite que os itens "quebrem" de linha se a tela do celular for muito estreita */
+        gap: 20px;
+    }
+
+    /* Traz a imagem de volta no mobile e ajusta o tamanho dela */
+    #banner {
+        display: flex;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #banner img {
+        max-width: 320px; /* Deixa o "blob" mágico num tamanho perfeito para a tela do celular */
+        height: 320px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+    
+    #cta .title {
+        font-size: 3rem; /* Diminui um pouquinho o título em celulares muito pequenos */
+    }
+}

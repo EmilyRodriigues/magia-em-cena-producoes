@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="src/styles/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Magia em Cena</title>
+     <link rel="icon" type="image/png" href="src/images/magia em cena (3).png">
+    </head>
+   
+    
+    <body>
+        <div vw class="enabled">
+     <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+             
+    
+
+    <header>
+        <nav id="navbar">
+            <img src="src/images/magia em cena (3).png" alt="Magia em Cena" id="nav_logo">
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Personagens</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonial">Depoimentos</a>
+                </li>
+            </ul>
+
+            <button class="btn-default" onclick="window.open('https://wa.me/5511970300363?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento.', '_blank')">
+                SOLICITE UM ORÇAMENTO
+            </button>
+            
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Personagens</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonial">Depoimentos</a>
+                </li>
+            </ul>
+
+            <a href="https://wa.me/5511970300363?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-default">
+                SOLICITE UM ORÇAMENTO
+            </a>
+            
+        </div>
+    </header> 
+
+    <main id="content">
+        <section id="home">
+    <div class="circle"></div>
+    <div id="cta">
+        <h1 class="title">
+            Bem-vindos ao  <br>
+            <span>Mundo da Magia!</span>
+        </h1>
+
+        <p class="description">
+            Animação de festas que faz crianças sorrirem do começo ao fim. Personagens, brincadeiras, shows e muita alegria. 
+        </p>
+
+        <div id="cta_buttons">
+    <a href="https://wa.me/5511970300363?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="btn-default">
+        Solicitar Orçamento 
+        <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+    </a>
+
+    <a href="#servicos" class="btn-outline">
+        Ver Serviços
+    </a>
+</div>
+
+<div class="hero-stats">
+    <div class="stat-item">
+        <span class="stat-number">+<span class="counter" data-target="500">0</span></span>
+        <span class="stat-text">festas realizadas</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number"><span class="counter" data-target="5">0</span></span>
+        <span class="stat-text">anos de magia</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-number"><span class="counter" data-target="100">0</span>%</span>
+        <span class="stat-text">sorrisos garantidos</span>
+    </div>
+</div>
+
+        <div class="social-media-buttons" style="margin-top: 10px;">
+            <a href="https://wa.me/5511970300363?text=Olá,%20gostaria%20de%20mais%20informações!" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/magiaemcenaproducoes/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@magiaaemcena?_r=1&_t=ZS-95sDWYHremj" target="_blank" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="banner">
+        <img src="src/images/pexels-deniss-bojanini-174298580-11840383.jpg" alt="Personagem Magia em Cena">
+    </div>
+</section>
+        <div id="quem-somos" class="quem-somos">
+    <div class="quem-somos-content">
+        
+        <div class="quem-somos-img animate-left">
+            <img src="src/images/sonic (2).jpg" alt="Imagem sobre nós">
+        </div>
+        
+        <div class="quem-somos-text animate-left">
+            <h2>
+                Transformamos <br> festas em <span>memórias mágicas</span>
+            </h2>
+            <p>
+                Somos uma equipe apaixonada por espalhar alegria. Há mais de 5 anos criamos experiências únicas para crianças e famílias, com personagens encantadores, brincadeiras criativas e muito amor em cada detalhe.
+            </p>
+            <p>
+                Cada festa é planejada com cuidado para ser segura, divertida e inesquecível — do primeiro abraço ao último confete.
+            </p>
+
+            <div class="quem-somos-cards">
+                <div class="qs-card">
+                    <div class="qs-icon pink">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h4>+500</h4>
+                    <p>Festas realizadas</p>
+                </div>
+                <div class="qs-card">
+                    <div class="qs-icon orange">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h4>5 anos</h4>
+                    <p>De experiência</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+        <section id="servicos">
+    <h1>Nossos Serviços</h1>
+    <h2>Oferecemos animação infantil, shows temáticos e organização inesquecível.</h2>
+    
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Festas Infantis</h3>
+            <p class="service-desc">Transforme a festa do seu filho em um momento mágico e cheio de alegria.</p>
+            <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Personagens vivos e interativos</li>
+                <li><i class="fa-solid fa-check"></i> Pintura facial e recreação</li>
+                <li><i class="fa-solid fa-check"></i> Sessão de fotos inesquecível</li>
+            </ul>
+            <button class="btn-default btn-open-modal" data-servico="Festas Infantis">Quero esse &rarr;</button>
+        </div>
+
+        <div class="service-card highlight">
+            <h3>Shows Temáticos</h3>
+            <p class="service-desc">Apresentações completas que encantam e prendem a atenção de todas as idades.</p>
+            <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Roteiros exclusivos e dinâmicos</li>
+                <li><i class="fa-solid fa-check"></i> Muita música, dança e teatro</li>
+                <li><i class="fa-solid fa-check"></i> Efeitos visuais mágicos</li>
+            </ul>
+            <button class="btn-default btn-open-modal" data-servico="Shows Temáticos">Quero esse &rarr;</button>
+        </div>
+
+        <div class="service-card">
+            <h3>Eventos Corporativos</h3>
+            <p class="service-desc">Levamos a magia para sua empresa, escolas e eventos de grande porte.</p>
+            <ul class="service-features">
+                <li><i class="fa-solid fa-check"></i> Especial Dia das Crianças</li>
+                <li><i class="fa-solid fa-check"></i> Confraternizações interativas</li>
+                <li><i class="fa-solid fa-check"></i> Ações de marketing e presença</li>
+            </ul>
+            <button class="btn-default btn-open-modal" data-servico="Eventos Corporativos">Quero esse &rarr;</button>
+        </div>
+    </div>
+</section>
+<div id="orcamentoModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        
+        <div class="modal-header">
+            <h2><i class="fa-solid fa-wand-magic-sparkles"></i> Solicite seu Orçamento</h2>
+            <p>Conte os detalhes da sua festa e responderemos rapidinho pelo WhatsApp!</p>
+        </div>
+
+        <form id="orcamentoForm">
+            <div class="input-group">
+                <label>Seu nome *</label>
+                <input type="text" id="modalNome" placeholder="Como podemos te chamar?" required>
+            </div>
+
+            <div class="input-group">
+                <label>Telefone / WhatsApp *</label>
+                <input type="tel" id="modalTelefone" placeholder="(11) 99999-9999" required>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label>Tipo de evento *</label>
+                    <input type="text" id="modalEvento" placeholder="Aniversário, show..." required>
+                </div>
+                <div class="input-group">
+                    <label>Data prevista</label>
+                    <input type="date" id="modalData">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Mensagem (opcional)</label>
+                <textarea id="modalMensagem" rows="3" placeholder="Tema da festa, idade da criança, número de convidados..."></textarea>
+            </div>
+
+            <div class="modal-buttons">
+                <button type="button" id="btnEnviarWhatsApp" class="btn-email" style="background-color: #25D366;">
+                    <i class="fa-brands fa-whatsapp"></i> Enviar Pedido por WhatsApp
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+       
+    
+      <section id="menu">
+    <div class="menu-header">
+        <h2 class="section-title">Personagens</h2>
+        <h3 class="section-subtitle">Heróis e princesas encantadas</h3>
+    </div>
+
+    <div class="swiper characters-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/TP.png" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/TPPP.png" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/sonic.jpg" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/TPP.png" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/foto1.jpeg" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/foto2.jpeg" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/foto3.jpeg" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/foto4.jpeg" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/foto7.jpeg" class="dish-image" alt="Personagem">
+            </div>
+            <div class="swiper-slide character-card">
+                <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+                <img src="src/images/foto6.jpeg" class="dish-image" alt="Personagem">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="testimonial">
+            <div id="testimonial_header">
+                <h1>Depoimentos</h1>
+            
+                <p>
+                    Quer saber o que torna a nossa marca tão especial?
+                    Confira o que nossos clientes têm a dizer!
+                </p>
+            </div>
+    
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="src/images/TPPP.png" alt="Imagem de uma pessoa">
+                            </div>
+    
+                            <div class="author-info">
+                                <h3>BATMAN</h3>
+                                <p>05/05/2023</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Gostaria de agradecer voce, o evento foi sensacional, nós amamos. obrigada pela parceria o seu funcionário é sensacional"
+                        </blockquote>
+
+                        
+                    </div>
+    
+    
+                    <div class="swiper-slide">
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="src/images/IMG-20250202-WA0025.jpg" alt="Imagem de uma pessoa">
+                            </div>
+    
+                            <div class="author-info">
+                                <h3>CINDERELA E PRÍNCIPE</h3>
+                                <p>13/05/2023</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Foi execelente. Os atores muito carinhosos e atenciosos, se mostraram muito solícitos... A apresentação foi emocionante.. chorei de soluçar, me tocou profundamente."
+                        </blockquote>
+    
+                        
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="src/images/IMG-20250202-WA0022.jpg" alt="Imagem de uma pessoa">
+                            </div>
+    
+                            <div class="author-info">
+                                <h3>ELSA</h3>
+                                <p>27/05/2023</p>
+                            </div>
+                        </div>
+                       
+                        <div class="testimonial-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-quote">
+                            "Adoramos o seu trabalho e do seu acessor! Vocês são muito educados, solícitos e as crianças amaram! Muito obrigada por fazer o aniversário da Alice ainda mais bonito e cheio de alegria!"
+                        </blockquote>
+    
+                        
+                    </div>
+
+                    <div class="swiper-slide"> 
+                        
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="src/images/IMG-20250202-WA0024.jpg" alt="Imagem de uma pessoa">
+                            </div>
+    
+                            <div class="author-info">
+                                <h3>ELSA E ANA</h3>
+                                <p>01/07/2023</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+    
+                        <blockquote class="testimonial-quote">
+                            "Foi maravilhoso, ficamos encantados com a apresentação, nós amamos. Muito obrigada pelo carinho com a minha filha."
+                        </blockquote>
+    
+                    </div>
+                </div>
+                
+
+                
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        </main>
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       
+                 
+            </div>
+        
+<footer>
+    <div class="footer-container">
+        <div class="footer-col about">
+            <img src="src/images/magia em cena (3).png" alt="Logo Magia em Cena" class="footer-logo">
+            <p>Transformamos festas infantis em experiências encantadoras com personagens inesquecíveis e shows temáticos únicos.</p>
+        </div>
+        
+        <div class="footer-col links">
+            <h4>Navegação</h4>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#menu">Personagens</a></li>
+                <li><a href="#testimonial">Depoimentos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact">
+            <h4>Contato</h4>
+            <ul>
+                <li><i class="fa-brands fa-whatsapp"></i> (11) 97030-0363</li>
+                <li><i class="fa-regular fa-envelope"></i> magiaaemcena@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-col social">
+            <h4>Siga-nos</h4>
+            <div class="footer-social-icons">
+                <a href="https://www.instagram.com/magiaemcenaproducao/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1Bfm4XRoZ2/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@magiaaemcena?_r=1&_t=ZS-95sDWYHremj" target="_blank" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Magia em Cena Produções. Todos os direitos reservados.</p>
+    </div>
+</footer>   
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
